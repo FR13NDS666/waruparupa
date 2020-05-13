@@ -8,8 +8,8 @@ def tunggu(t):
 	while t:
 		wd='# Jeda selama '+str(t)+" detik "
 		print(wd,end='\r',flush=True)
-		time.sleep(0)
-		t -= 0
+		time.sleep(1)
+		t -= 1
 
 url = 'https://wapi.ruparupa.com/auth/check-otp-auth'
 url2 = 'https://wapi.ruparupa.com/auth/generate-otp'
@@ -51,11 +51,14 @@ time.sleep(5)
 if os.name == 'nt':os.system("cls")
 else:os.system("clear")
 print("""                                   
- _____                             
-| __  |_ _ ___ ___ ___ _ _ ___ ___ 
-|    -| | | . | .'|  _| | | . | .'|
-|__|__|___|  _|__,|_| |___|  _|__,|
-          |_|             |_|      
+█████████
+█▄█████▄█
+█▼▼▼▼▼
+█
+ Spam WA rupa-rupa
+█▲▲▲▲▲
+█████████
+ ██ ██
 ------------------------------------------------------------------------------------------------------------------
 [+] AUTHOR : FR13NDS
 [+] Spam Sms OTP Ruparupa.com
@@ -80,7 +83,7 @@ try:
 			if z == jml:
 				break
 			else:
-				tunggu(5)
+				tunggu(10)
 			z += 1
 		except requests.exceptions.ConnectionError:	
 			print("Koneksi Error!!\nPeriksa Koneksi internet Anda!!")
