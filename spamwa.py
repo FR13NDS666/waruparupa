@@ -8,8 +8,8 @@ def tunggu(t):
 	while t:
 		wd='# Jeda selama '+str(t)+" detik "
 		print(wd,end='\r',flush=True)
-		time.sleep(0)
-		t -= 0
+		time.sleep(5)
+		t -= 5
 
 url = 'https://wapi.ruparupa.com/auth/check-otp-auth'
 url2 = 'https://wapi.ruparupa.com/auth/generate-otp'
@@ -83,8 +83,8 @@ try:
 			if z == jml:
 				break
 			else:
-				tunggu(1)
-			z += 1
+				tunggu(20)
+			z += 20
 		except requests.exceptions.ConnectionError:	
 			print("Koneksi Error!!\nPeriksa Koneksi internet Anda!!")
 		except KeyboardInterrupt:
