@@ -8,8 +8,8 @@ def tunggu(t):
 	while t:
 		wd='# Jeda selama '+str(t)+" detik "
 		print(wd,end='\r',flush=True)
-		time.sleep(1)
-		t -= 1
+		time.sleep(5)
+		t -= 5
 
 url = 'https://wapi.ruparupa.com/auth/check-otp-auth'
 url2 = 'https://wapi.ruparupa.com/auth/generate-otp'
@@ -55,7 +55,7 @@ print("""
 █▄█████▄█
 █▼▼▼▼▼
 █
- Spam WA rupa-rupa
+           Spam WA rupa-rupa
 █▲▲▲▲▲
 █████████
  ██ ██
@@ -84,7 +84,7 @@ try:
 				break
 			else:
 				tunggu(10)
-			z += 1
+			z += 10
 		except requests.exceptions.ConnectionError:	
 			print("Koneksi Error!!\nPeriksa Koneksi internet Anda!!")
 		except KeyboardInterrupt:
