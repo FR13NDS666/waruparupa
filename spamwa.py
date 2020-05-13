@@ -8,8 +8,8 @@ def tunggu(t):
 	while t:
 		wd='# Jeda selama '+str(t)+" detik "
 		print(wd,end='\r',flush=True)
-		time.sleep(1)
-		t -= 1
+		time.sleep(0)
+		t -= 0
 
 url = 'https://wapi.ruparupa.com/auth/check-otp-auth'
 url2 = 'https://wapi.ruparupa.com/auth/generate-otp'
@@ -56,7 +56,7 @@ print("""
 |    -| | | . | .'|  _| | | . | .'|
 |__|__|___|  _|__,|_| |___|  _|__,|
           |_|             |_|      
-
+------------------------------------------------------------------------------------------------------------------
 [+] AUTHOR : FR13NDS
 [+] Spam Sms OTP Ruparupa.com
 
