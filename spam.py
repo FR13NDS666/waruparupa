@@ -1,4 +1,4 @@
-# CODED : AkasakaID
+# CODED : FR13NDS
 # Time : 18/02/2020
 # LIHAT? BOLEH , REKOD? JANGAN 
 # Stay Strong!!
@@ -81,7 +81,7 @@ try:
 			if z == jml:
 				break
 			else:
-				tunggu(60)
+				tunggu(20)
 			z += 1
 		except requests.exceptions.ConnectionError:	
 			print("Koneksi Error!!\nPeriksa Koneksi internet Anda!!")
