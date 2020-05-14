@@ -8,8 +8,8 @@ def tunggu(t):
 	while t:
 		wd='# Jeda selama '+str(t)+" detik "
 		print(wd,end='\r',flush=True)
-		time.sleep(5)
-		t -= 5
+		time.sleep(1)
+		t -= 1
 
 url = 'https://wapi.ruparupa.com/auth/check-otp-auth'
 url2 = 'https://wapi.ruparupa.com/auth/generate-otp'
@@ -45,10 +45,7 @@ hdurl2 = {
 }
 if os.name == 'nt':os.system("cls")
 else:os.system("clear")
-print("Subscribe Channel Fowawaz Truffle")
-os.system('xdg-open https://youtube.com/c/FowawazTruffle')
-time.sleep(5)
-if os.name == 'nt':os.system("cls")
+print:f os.name == 'nt':os.system("cls")
 else:os.system("clear")
 print("""                                   
 █████████
